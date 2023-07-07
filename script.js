@@ -30,15 +30,17 @@ function HitValue(){
 
 function GetScore(){
     document.querySelector("#btm").addEventListener("click",function(dets){
-       if(Number(dets.target.innerHTML)===hitvar){
-        document.querySelector("#scorediv").textContent=score+=10;
-        Bubblemaker();
-        HitValue();
-       }else{
-        Bubblemaker();
-        HitValue();
-       }
-        
+        if(dets.target!==document.querySelector("#btm")){
+            if(Number(dets.target.innerHTML)===hitvar){
+                document.querySelector("#scorediv").textContent=score+=10;
+                Bubblemaker();
+                HitValue();
+               }else{
+                Bubblemaker();
+                HitValue();
+               }
+        }
+ 
     })
 
 }
