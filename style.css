@@ -77,3 +77,69 @@ body {
     background-color:#000814a4 ;
     transition: all ease 0.3s;
 }
+@media (max-width:600px) {
+    #main{
+        width: 100vw;
+        height: 100vh;
+        background-color:#48cae4;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #top{
+        width: 100%;
+        height: 60px;
+        background-color: #caf0f8;
+        border-start-end-radius: 10px;
+        border-start-start-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    #hero{
+        width: 90%;
+        height: 95%;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .box{
+        padding: 12px;
+        background-color:antiquewhite;
+        border-radius: 10px;
+    }
+    .one{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .bubble{
+        width: 35px;
+        height: 35px;
+        background-color: #000814;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: #fff;
+    }
+    #btm{
+        width: 100%;
+        height: calc(100% - 80px);
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;;
+        flex-wrap: wrap;
+        padding: 3px 1.8px;
+    }
+}
